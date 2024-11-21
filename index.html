@@ -1,0 +1,118 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DTC E-PASS</title>
+    <style>
+      body {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        line-height: 1.57143;
+        color: #322828;
+        background-color: #d9eeef;
+        margin: 0;
+        padding: 0;
+        height: max-content;
+      }
+      h1 {
+        font-size: 25px;
+        font-family: "Merriweather", "Times New Roman", Times, serif;
+      }
+      .container {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 16;
+        background: #fff;
+        box-shadow: 0 0px 10px 0 rgba(67, 67, 69, 0.35);
+        padding: 20px;
+      }
+      .container h1 {
+        color: #01a2a6;
+        font-size: 24px;
+        text-align: center;
+        margin: 0;
+      }
+      .content {
+        padding: 98px 10px 10px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .content img {
+        border-radius: 0.2em;
+        max-width: 100%;
+        height: 43em;
+      }
+      .image-container {
+        max-height: 42em;
+      }
+      img {
+        flex-basis: 40%;
+      }
+      .gridd {
+        font-size: 21.5px;
+        padding-left: 0.2em;
+
+        padding-top: 14em;
+        padding-bottom: 1.1em;
+      }
+
+      .griddd {
+        font-size: 18.75px;
+        padding-left: 0.75em;
+
+        padding-top: 19em;
+        padding-bottom: 1em;
+      }
+      #blinkingText {
+        font-size: 25px;
+        font-weight: bold;
+        color: #30721c;
+        transition: 1.5s;
+        opacity: 0;
+        animation: opacityAnimation 1.5s infinite alternate;
+      }
+      @keyframes opacityAnimation {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 2;
+        }
+      }
+      footer {
+        background-color: #01a2a6;
+        padding: 1px;
+        color: #fff;
+        text-align: center;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>E-Bus Pass</h1>
+    </div>
+    <div class="content">
+      <div class="image-container">
+        <img src="kartil3.jpg" alt="pass" style="position: relative" />
+      </div>
+      <grid class="gridd" style="position: absolute">
+        <div id="blinkingText">7504102356298</div>
+      </grid>
+      <grid class="griddd" style="position: absolute">
+        <div style="color: red">
+          <strong>Valid from 19/10/2024 to 18/03/2025</strong>
+        </div>
+      </grid>
+    </div>
+    <footer>
+      <h4 style="color: black">Copyright © Delhi e-Governance Society 2024</h4>
+    </footer>
+  </body>
+</html>
